@@ -1,8 +1,8 @@
 ## Application Name: ordering_system
 
-Note: Need to start the server before running test cases.
+## Note: Need to start the server before running test cases.
 
-## change the port with respective server port number.
+change the port with respective server port number.
 
 1) Run from Spring Boot main class(OrderSystemApplication.java)
 
