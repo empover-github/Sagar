@@ -1,0 +1,147 @@
+{
+	"info": {
+		"_postman_id": "576eaac9-6b83-431a-8414-c08296e93e64",
+		"name": "Order_System",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create order",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"orderId\" : \"\",\n\t\"numberOfBricks\":5,\n\t \"status\":\"\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:7070/brick",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7070",
+					"path": [
+						"brick"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get order by orderId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:7070/brick/969",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7070",
+					"path": [
+						"brick",
+						"969"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all orders",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:7070/brick",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7070",
+					"path": [
+						"brick"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update order",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\n        \"orderId\": 693,\n        \"numberOfBricks\": 11,\n        \"status\": \"Booked\"\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:7070/brick/693",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7070",
+					"path": [
+						"brick",
+						"693"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FulFillOrder",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"orderId\": 97,\n        \"numberOfBricks\": 15,\n        \"status\": \"Booked\"\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:7070/brickfull",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7070",
+					"path": [
+						"brickfull"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
